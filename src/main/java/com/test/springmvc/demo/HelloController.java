@@ -27,7 +27,7 @@ public class HelloController {
 		String[] names=name.split(".");
 		Resource userXML=new ClassPathResource("entity.xml");
 		BeanFactory fatory=new XmlBeanFactory(userXML);
-		if(user!=null||"".equals(user)){
+		if(user!=null){
 			return "hello";
 		}else{
 			user.sayYourself();
